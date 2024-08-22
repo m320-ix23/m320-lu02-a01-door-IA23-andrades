@@ -7,7 +7,7 @@ class Door:
     """
 
 
-    # Mit dem Keyword def wird eine Funktion bzw. eben ein Konstruktor deklariert.##
+    # Mit dem Keyword def wird eine Funktion bzw. eben ein Konstruktor deklariert.
     # Der Konstruktor trägt IMMER den Namen __init__  und und weist als ersten Parameter den Wert self auf.
     # Danach folgen die Übergabeparameter, deren Werte dann den Attributen zugewiesen werden.
     # Attribute können aber auch mit einem fixen Wert initialisiert werden.
@@ -49,7 +49,7 @@ class Door:
         Das ist nur möglich, wenn die Türe nicht offen ist.
         Für das verriegeln ist aber das Türschloss zuständig. Es weiss wie das geht.
         """
-        if self._door_is_open == False:
+        if self._door_is_locked == False:
             self._door_is_locked = self._the_door_lock.lock()
 
     def unlock_the_door(self):
@@ -80,7 +80,7 @@ class Door:
         return self._door_is_open
 
     @property
-    def door_ist_locked(self):
+    def door_is_locked(self):
         """
         getter-Methode für den Zustand door_is_locked
         :return: true, wenn die Türe verriegelt ist, sonst false
