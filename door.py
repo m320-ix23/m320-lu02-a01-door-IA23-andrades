@@ -1,3 +1,8 @@
+"""
+Dieses Modul definiert eine Door-Klasse, die eine Tür simuliert, und eine DoorLock-Klasse,
+die ein einfaches Türschloss repräsentiert.
+"""
+
 class Door:
     """
     Diese Klasse beschreibt eine Türe mit der Eigenschaft color (Farbe) und den Zuständen
@@ -62,7 +67,7 @@ class Door:
     @property
     def door_is_open(self):
         """
-        Getter-Methode für den Zustand door_is_open
+        Getter-Methode für den Zustand door_is_open.
         :return: True, wenn die Türe offen ist, sonst False
         """
         return self._door_is_open
@@ -70,7 +75,7 @@ class Door:
     @property
     def door_is_locked(self):
         """
-        Getter-Methode für den Zustand door_is_locked
+        Getter-Methode für den Zustand door_is_locked.
         :return: True, wenn die Türe verriegelt ist, sonst False
         """
         return self._door_is_locked
@@ -78,7 +83,7 @@ class Door:
     @property
     def color(self):
         """
-        Getter-Methode für die Eigenschaft color
+        Getter-Methode für die Eigenschaft color.
         :return: Die Farbe des Objekts
         """
         return self._color
@@ -86,7 +91,7 @@ class Door:
     @color.setter
     def color(self, new_color):
         """
-        Setter-Methode für die Eigenschaft color
+        Setter-Methode für die Eigenschaft color.
         :param new_color: Die neue Farbe der Tür
         """
         self._color = new_color
